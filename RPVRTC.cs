@@ -6,13 +6,13 @@ using System.Threading;
 
 public class RPVRTC {
 
-  SignalEnumerator<Texture2D> Compress24(Texture2D tex)
+  public static SignalEnumerator<Texture2D> Compress24(Texture2D tex)
   {
       var signal = new SignalEnumerator<Texture2D>();
       StartCoroutine(_Compress24(tex, signal));
       return signal;
   }
-  IEnumerator _Compress24(Texture2D tex, SignalEnumerator<Texture2D> signal)
+  private static IEnumerator _Compress24(Texture2D tex, SignalEnumerator<Texture2D> signal)
   {
       var width = tex.width;
       var height = tex.height;
