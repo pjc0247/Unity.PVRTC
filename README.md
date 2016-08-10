@@ -3,6 +3,7 @@ runtime texture compression
 
 Usage
 ----
+![c](compp.PNG)
 ```cs
 var www = new WWW("http://my_image.com");
 yield return www;
