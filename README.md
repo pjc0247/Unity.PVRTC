@@ -13,3 +13,8 @@ yield return comp;
 // DONE!
 Texture2D compressedTexture = comp.data;
 ```
+
+External Links
+----
+* PVRTC Encode/Decode impl (C#) : https://bitbucket.org/Agent_007/pvrtc-encoder-decoder-for-unity
+* impl (C++) : https://bitbucket.org/jthlim/pvrtccompressor
